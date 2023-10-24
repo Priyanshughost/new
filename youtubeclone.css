@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.925);
+    height: 100vh;
+}
+.right{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.right span img{
+    width: 2rem;
+    height: 1.8rem;
+    background: transparent;
+}
+#yt{
+    display: flex;
+    flex-direction: row;
+}
+.ri-youtube-line{
+    display: flex;
+    align-items: center;
+}
+.yt{
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.sup{
+    font-size: 0.5rem;
+    font-weight: 400;
+    height: 1.5rem;
+}
+.ri-menu-line{
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.search_bar input{
+    width: 50vw;
+    height: 2.3rem;
+    border-radius: 20px;
+    border: 1px solid rgb(116, 114, 114);
+    background-color: rgb(19 19 19);
+    color: white;
+    padding: 1rem;
+}
+.search_bar input:placeholder-shown{
+    font-size: 0.8rem;
+    padding-left: 1rem;
+}
+.left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+.profile{
+    border: 0.2rem solid rgb(209, 205, 205);
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.left .ri-notification-line, .ri-vidicon-line{
+    font-size: 1.5rem;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    /* box-sizing: border-box; */
+    padding: 0.5rem 1.5rem;
+    /* position: fixed; */
+}
+.menu a, .contents a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.85rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.common{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* border: 1px solid; */
+    gap: 1.3rem;
+    width: 100%;
+    height: 2rem;
+    border-radius: 10px;
+}
+.common:focus{
+    background-color: rgb(125, 128, 125);
+}
+.ri-home-fill, .ri-profile-fill, .ri-movie-fill, .ri-bank-card-2-fill, .ri-user-line, .ri-history-line, .ri-video-line, .ri-time-line, .ri-thumb-up-line, .ri-fire-line, .ri-shopping-bag-line, .ri-disc-line, .ri-movie-2-line, .ri-wireless-charging-line, .ri-playstation-line, .ri-newspaper-line, .ri-trophy-line, .ri-book-open-line, .ri-handbag-line, .ri-mic-2-line{
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    font-weight: lighter;
+}
+.title{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1.2rem 0rem 1rem;
+}
+.ri-arrow-right-s-line{
+    display: flex;
+    align-items: center;
+}
+.contents{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border-radius: 10px;
+}
+.icon{
+    border: 1px solid rgb(243, 241, 241);
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.side_content::-webkit-scrollbar{
+    width: 0.3rem;
+    background-color: rgb(19 19 19);
+}
+.side_content::-webkit-scrollbar-thumb{
+    background-color: rgb(87, 84, 84);
+    border-radius: 15px;
+}
+.video-section::-webkit-scrollbar{
+    width: 0.3rem;
+    background-color: rgb(19 19 19);
+}
+.video-section::-webkit-scrollbar-thumb{
+    background-color: rgb(87, 84, 84);
+    border-radius: 15px;
+}
+/* .you{
+    padding-top: 2rem;
+} */
+/* .subscription, .Explore, .you{
+    padding-top: 1rem;
+} */
+.menu, .subscription, .Explore, .you{
+    /* padding: 1.2rem 1.5rem; */
+    width: 100%;
+}
+.side_content{
+    padding: 1rem 1.5rem; 
+    width: 22%;
+    /* position: relative; */
+    height: 90vh;
+    overflow: auto;
+}
+.main{
+    display: flex;
+}
+.common:hover{
+    background-color: rgb(63, 61, 61);
+}
+.tags{
+    width: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.8rem;
+    box-sizing: border-box;
+    padding: 0.3rem;
+    border-radius: 10px;
+    background-color: rgba(127, 131, 127, 0.233);
+    font-weight: 500;
+}
+.tags:hover{
+    background-color: rgba(127, 131, 127, 0.473);
+    cursor:pointer;
+}
+.vid-tags{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    overflow: auto;
+    /* border: 1px solid; */
+    padding: 1.2rem 0rem
+}
+.video-section{
+    margin: 0;
+    padding: 0rem 1.5rem;
+    width: 100%;
+    height: 90vh;
+    overflow: auto;
+}
+.footer{
+    display: flex;
+}
+.card-contents{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0rem 0.5rem;
+}
+.cardtitle{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.chnlname, .views, .time, .dot{
+    font-size: 0.85rem;
+    color: rgb(173, 171, 171);
+}
+.logo{
+    width: 2rem;
+    height: 100%;
+    /* border: 1px solid ; */
+    border-radius: 50%;
+    padding: 0.3rem 0rem 0rem;
+}
+.videos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.9rem;
+    padding: 0.6rem 0rem;
+}
+.thumbnail{
+    width: 100%;
+    border-radius: 15px;
+}
+.card{
+    padding: 0rem 0rem 1.5rem;
+}
+.side_nav{
+    display: none;
+}
+@media (max-width: 1131px){
+    .videos{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .side_content{
+        display: none;
+    }
+    .ri-menu-line:hover .side_content{
+        display: flex;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+    .side_nav{
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid; */
+        width: 5rem;
+        padding: 0.5rem 0.7rem;
+    }
+    .common{
+        flex-direction: column;
+        font-size: 0.55rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        height: 4rem;
+        align-items: center;
+        justify-content: center;
+        gap: 0.3rem;
+        /* border: 1px solid; */
+    }
+    .ri-menu-line{
+        font-weight: lighter;
+    }
+    .yt, .ri-vidicon-line{
+        font-size: 1rem;
+    }
+}
+@media (max-width:768px){
+    .videos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 850px){
+    .cardtitle{
+        font-size: 0.89rem;
+    }
+    .chnlname, .views, .time{
+        font-size: 0.7rem;
+    }
+}
+@media (max-width: 678px){
+    .right{
+        width: 8rem;
+    }
+    .search_bar input{
+        width: 100%;
+    }
+}
+@media (max-width: 550px){
+    .ri-menu-line, .ri-notification-fill, .ri-vidicon-line{
+        font-size: 0.7rem;
+    }
+    .right{
+        padding: 0.2rem 0rem;
+        justify-content: center;
+        width: 6rem;
+        height: 100%;
+    }
+    .left{
+        width: 3rem;
+        gap: 0.4rem;
+    }
+    .yt{
+        width: 100%;
+        font-size: 0.65rem;
+    }
+    .profile{
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+    .common{
+        font-size: 0.5rem;
+        height: 3rem;
+    }
+    .ri-home-fill, .ri-movie-fill, .ri-bank-card-2-fill, .ri-profile-fill{
+        font-size: 0.7rem;
+    }
+    .side_nav{
+        padding: 0.8rem 0rem;
+    }
+}
+@media (max-width: 498px){
+    .search_bar{
+        width: 8.5rem;
+    }
+    .videos{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (max-width:547px){
+    .cardtitle{
+        font-size: 0.65rem;
+    }
+    .chnlname, .views, .time{
+        font-size: 0.6rem;
+    }
+}
